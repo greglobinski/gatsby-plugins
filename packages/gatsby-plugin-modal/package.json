@@ -35,6 +35,8 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.7",
-    "@emotion/styled": "^10.0.7"
+    "@emotion/styled": "^10.0.7",
+    "@reach/dialog": "^0.2.9",
+    "gatsby-plugin-compile-es6-packages": "^1.1.0"
   }
 }

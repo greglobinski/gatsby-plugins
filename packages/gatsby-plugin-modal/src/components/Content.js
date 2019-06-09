@@ -80,19 +80,19 @@ export default ({
     <DialogContent
       style={{
         background: background ? background : '#666',
+        height: '100vh',
+        left: 0,
+        margin: 0,
+        outline: 'none',
+        padding: 0,
+        position: 'absolute',
+        top: 0,
         transform: `translate3D(${content.translateX}, ${
           content.translateY
-        }, 0) scale(${content.scaleX}, ${content.scaleY}) perspective(1000px)`,
+        }, 0) scale(${content.scaleX}, ${content.scaleY})`,
         transition: `transform ${content.transition}ms`,
-        position: 'absolute',
-        margin: 0,
-        padding: 0,
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100vh',
-        outline: 'none',
-        transformOrigin: 'top left'
+        transformOrigin: 'top left',
+        width: '100%'
       }}
       gatsby-modal-content="true"
       className={className}
@@ -101,6 +101,7 @@ export default ({
         style={{
           height: '100%',
           opacity: innerContent.opacity,
+          overflowY: `auto`,
           position: 'relative',
           transition: `opacity ${innerContent.transition}ms`,
           width: '100%'

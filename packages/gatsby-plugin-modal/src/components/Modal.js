@@ -49,7 +49,7 @@ export const ModalProvider = ({ children, wrapper }) => {
         closeModal
       }}
     >
-      {children}}
+      {children}
       <ModalContext.Consumer>
         {({ modalIsOpen, Component, closeModal, modalProps }) => {
           const { sourceRef, background } = modalProps;

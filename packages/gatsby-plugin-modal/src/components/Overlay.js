@@ -41,7 +41,7 @@ const Overlay = ({ isOpen, onDismiss, isClosing, className, children }) => {
         top: 0,
         transition: 'background 500ms',
         width: '100%',
-        zIndex: 10000
+        zIndex: 1000
       }}
       className={className}
       gatsby-modal-overlay="true"

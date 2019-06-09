@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 import { ModalContext } from "gatsby-plugin-modal"
 import randomcolor from "randomcolor"
 
-import Layout from "../components/layout"
+import FullPageLayout from "../components/FullPageLayout"
 
 let cards = [
   "There’s Big Money In MODAL",
@@ -190,7 +190,7 @@ const ExamplePageOne = () => {
   cards.map((card, idx) => (btnRefs[idx] = useRef(null)))
 
   return (
-    <Layout>
+    <FullPageLayout>
       <Wall>
         {cards.map((card, idx) =>
           idx !== cards.length - 1 ? (
@@ -238,7 +238,7 @@ const ExamplePageOne = () => {
           )
         )}
       </Wall>
-    </Layout>
+    </FullPageLayout>
   )
 }
 

@@ -12,5 +12,22 @@ module.exports = {
       },
     },
   ],
-  plugins: [`gatsby-plugin-emotion`],
+  plugins: [
+    `gatsby-plugin-emotion`,
+    {
+      resolve: `gatsby-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        defaultLayouts: {
+          default: require.resolve("./src/templates/mdx-page-template.js"),
+        },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {},
+          },
+        ],
+      },
+    },
+  ],
 }

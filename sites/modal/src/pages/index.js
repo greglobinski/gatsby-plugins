@@ -2,7 +2,7 @@ import React from "react"
 import { Link as BaseLink } from "gatsby"
 import styled from "@emotion/styled"
 
-import Layout from "../components/layout"
+import PageLayout from "../components/PageLayout"
 
 const Link = styled(BaseLink)`
   font-size: 1.5rem;
@@ -20,7 +20,7 @@ const Examples = styled(`div`)`
 `
 
 const IndexPage = () => (
-  <Layout>
+  <PageLayout>
     <Examples>
       Example one
       <Link to="/example-one">
@@ -30,8 +30,9 @@ const IndexPage = () => (
       <Link to="/example-two">
         <img src="example-two.gif" alt="" />
       </Link>
+      <Link to="/example-three">Example two</Link>
     </Examples>
-  </Layout>
+  </PageLayout>
 )
 
 export default IndexPage
