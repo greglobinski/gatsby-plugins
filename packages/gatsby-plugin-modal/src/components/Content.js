@@ -12,20 +12,27 @@ export default ({
   background,
   className
 }) => {
-  const windowWidth = window.innerWidth;
-  const windowHeight = window.innerHeight;
+  let translateX = 0;
+  let translateY = 0;
+  let scaleX = 0;
+  let scaleY = 0;
 
-  const originBounding = sourceRef.getBoundingClientRect();
-  const originWidth = originBounding.width;
-  const originHeight = originBounding.height;
+  if (typeof window !== `undefined`) {
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
 
-  const originX = originBounding.x;
-  const originY = originBounding.y;
-  const scaleX = originWidth / windowWidth;
-  const scaleY = originHeight / windowHeight;
+    const originBounding = sourceRef.getBoundingClientRect();
+    const originWidth = originBounding.width;
+    const originHeight = originBounding.height;
 
-  const translateX = `${originX}px`;
-  const translateY = `${originY}px`;
+    const originX = originBounding.x;
+    const originY = originBounding.y;
+    scaleX = originWidth / windowWidth;
+    scaleY = originHeight / windowHeight;
+
+    translateX = `${originX}px`;
+    translateY = `${originY}px`;
+  }
 
   const [content, setContent] = useState({
     translateX,

@@ -1,7 +1,7 @@
 import React, { useContext, useRef } from "react"
 import styled from "@emotion/styled"
 import { ModalContext } from "gatsby-plugin-modal"
-import { FiMaximize2, FiMinimize2 } from "react-icons/fi"
+import { FiMaximize2 } from "react-icons/fi"
 
 const Wrapper = styled(`div`)`
   position: relative;

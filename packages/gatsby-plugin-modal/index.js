@@ -1,1 +1,5 @@
-export { ModalContext } from './src/components/Modal';
+export {
+  ModalProvider,
+  ModalContext,
+  ModalConsumer
+} from './src/components/Modal';

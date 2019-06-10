@@ -1,6 +1,6 @@
-import React from 'react';
-import { ModalProvider } from './src/components/Modal';
+// import React from 'react';
+// import { ModalProvider } from './src/components/Modal';
 
-export const wrapPageElement = ({ element, props }, { wrapper = false }) => {
-  return <ModalProvider wrapper={wrapper}>{element}</ModalProvider>;
-};
+// export const wrapRootElement = ({ element }) => {
+//   return <ModalProvider>{element}</ModalProvider>;
+// };

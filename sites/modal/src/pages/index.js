@@ -22,15 +22,20 @@ const Examples = styled(`div`)`
 const IndexPage = () => (
   <PageLayout>
     <Examples>
-      Example one
+      <h2>Example A</h2>
       <Link to="/example-one">
         <img src="example-one.gif" alt="" />
       </Link>
-      Example two
+      <h2>Example B</h2>
       <Link to="/example-two">
         <img src="example-two.gif" alt="" />
       </Link>
-      <Link to="/example-three">Example two</Link>
+      <h2>Example C</h2>
+      <Link to="/example-three">
+        <Link to="/example-three">
+          <img src="example-three.gif" alt="" />
+        </Link>
+      </Link>
     </Examples>
   </PageLayout>
 )

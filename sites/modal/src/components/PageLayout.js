@@ -2,6 +2,7 @@ import React, { Fragment } from "react"
 import PropTypes from "prop-types"
 import { Global, css } from "@emotion/core"
 import styled from "@emotion/styled"
+import { ModalProvider } from "gatsby-plugin-modal"
 
 const Content = styled(`div`)`
   margin: 0 auto;
@@ -15,10 +16,19 @@ const Content = styled(`div`)`
     letter-spacing: -0.03em;
   }
 
-  & > p {
+  h2 {
+    font-size: 2rem;
+    margin: 5rem 0 1.5rem;
+  }
+
+  p {
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 3rem;
+  }
+
+  a > img {
+    border: 1px solid #ddd;
   }
 
   .gatsby-highlight {
@@ -55,7 +65,7 @@ const Content = styled(`div`)`
 `
 
 const PageLayout = ({ children, className }) => (
-  <Fragment>
+  <ModalProvider>
     <Global
       styles={css`
         body {
@@ -71,8 +81,9 @@ const PageLayout = ({ children, className }) => (
         }
       `}
     />
+
     <Content className={className}>{children}</Content>
-  </Fragment>
+  </ModalProvider>
 )
 
 PageLayout.propTypes = {

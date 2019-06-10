@@ -8,5 +8,7 @@
     "sites/*"
   ],
   "scripts": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "lerna": "^3.14.2"
+  }
 }

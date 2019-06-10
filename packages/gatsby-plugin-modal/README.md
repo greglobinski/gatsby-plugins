@@ -2,13 +2,17 @@
 
 > The package is not published yet!
 
-### Example one
+### Example A
 
 ![example one](./assets/example-one.gif)
 
-### Example two
+### Example B
 
 ![example two](./assets/example-two.gif)
+
+### Example C
+
+![example two](./assets/example-three.gif)
 
 ### Licence
 
