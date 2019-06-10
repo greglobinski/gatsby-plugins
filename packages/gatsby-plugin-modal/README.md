@@ -4,15 +4,36 @@
 
 ### Example A
 
-![example one](./assets/example-one.gif)
+![example one](../../sites/modal/static/example-one.gif)
 
 ### Example B
 
-![example two](./assets/example-two.gif)
+![example two](../../sites/modal/static/example-two.gif)
 
 ### Example C
 
-![example two](./assets/example-three.gif)
+![example two](../../sites/modal/static/example-three.gif)
+
+### Run examples on localhost
+
+Clone the repo
+
+```
+git clone https://github.com/greglobinski/gatsby-plugins.git
+```
+
+Install dependencies
+
+```
+cd gatsby-plugins
+yarn install
+```
+
+Run
+
+```
+yarn workspace modal develop
+```
 
 ### Licence
 
