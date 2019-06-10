@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/gatsby-plugin-modal",
   siteMetadata: {
     title: `gatsby-plugin-modal - example site`,
     description: ``,
