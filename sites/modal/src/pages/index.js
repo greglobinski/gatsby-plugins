@@ -1,7 +1,12 @@
 import React from "react"
+import { Link as BaseLink } from "gatsby"
 import styled from "@emotion/styled"
 
 import PageLayout from "../components/PageLayout"
+
+const Link = styled(BaseLink)`
+  font-size: 1.5rem;
+`
 
 const Examples = styled(`div`)`
   max-width: 40rem;
@@ -18,17 +23,19 @@ const IndexPage = () => (
   <PageLayout>
     <Examples>
       <h2>Example A</h2>
-      <a to="https://greglobinski.github.io/gatsby-plugins/example-one/">
+      <Link to="/example-one">
         <img src="example-one.gif" alt="" />
-      </a>
+      </Link>
       <h2>Example B</h2>
-      <a to="https://greglobinski.github.io/gatsby-plugins//example-two">
+      <Link to="/example-two">
         <img src="example-two.gif" alt="" />
-      </a>
+      </Link>
       <h2>Example C</h2>
-      <a to="https://greglobinski.github.io/gatsby-plugins//example-three">
-        <img src="example-three.gif" alt="" />
-      </a>
+      <Link to="/example-three">
+        <Link to="/example-three">
+          <img src="example-three.gif" alt="" />
+        </Link>
+      </Link>
     </Examples>
   </PageLayout>
 )
